@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maron bot site</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="maron">Maron</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Discord Support Server</a></li>
+                <li><a href="#">Bot invite</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Developers</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <h2 id="text">Maron Bot</h2>
+            <a href="#sec" id="btn">More</a>
+        </section>
+        <div class="sec" id="sec">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ea quibusdam molestias exercitationem, eius laudantium perferendis quis rem? Illum a voluptatem unde earum ullam deleniti excepturi necessitatibus totam alias consectetur?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil alias veniam iure autem quisquam obcaecati quasi reprehenderit adipisci, itaque explicabo cumque maxime. Quam at dolorum, voluptatibus voluptatem facilis aliquam?</p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value + 'px';
+            })
+        </script>
+    </body>
+</html>
